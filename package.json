@@ -1,0 +1,30 @@
+{
+  "name": "lib",
+  "version": "1.0.0",
+  "description": "\"this is online lib\"",
+  "main": "first.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aakashdeveloper/sree.git"
+  },
+  "keywords": [
+    "\"lib",
+    "books\""
+  ],
+  "author": "aakash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aakashdeveloper/sree/issues"
+  },
+  "homepage": "https://github.com/Aakashdeveloper/sree#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
