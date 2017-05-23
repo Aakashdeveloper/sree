@@ -23,7 +23,8 @@
   "homepage": "https://github.com/Aakashdeveloper/sree#readme",
   "dependencies": {
     "ejs": "^2.5.6",
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "mongoose": "^4.10.1"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
