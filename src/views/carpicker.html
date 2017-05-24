@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Car Picker</title>
+</head>
+<body>
+	<form action="/fav_car" method="POST">
+		<p> What is your fav car</p>
+		{% for car in cars %}
+			<p>
+				<input type="radio" name="car" value={{car}}>{{car}}</input>
+			</p>
+		{% endfor %}
+		<input type="submit" value="submt">
+	</form>
+
+</body>
+</html>

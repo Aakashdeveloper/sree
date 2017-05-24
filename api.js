@@ -24,19 +24,20 @@ commanRouter.route('/getCategories')
 });
 
 commanRouter.route('/getPlaces')
-    .get(function(req,res){
-		    var query = {};
-			if(req.query.value){
-				query.value = req.query.value
-			}
+	.get(function(req,res){
+		var query={};
+		if(req.query.value){
+			query.value = req.query.value
+		}
 
-		Place.find(query, function(err,data){
-			if(err)
-			   res.status(500).send(err);
-			else
-				res.json({"List":data});
-		})
+	Place.find(query,function(err,data){
+		if(err)
+			res.status(500).send(err)
+		else
+			res.json({"List":data});
+	});
 });
+
 
 app.use('/api', commanRouter);
 
@@ -51,5 +52,5 @@ app.get('/image', function(req,res){
 });
 
 app.listen(port, function(){
-	console.log("running");
+	console.log("running on 3100");
 });
