@@ -14,12 +14,14 @@ var nav = [{
 
 var bookRouter = express.Router();
 var bookRouter = require('./src/routes/bookRoutes')(nav);
+var adminRouter = require('./src/routes/adminRoutes')(nav);
 
 app.use(express.static(__dirname + '/public'));
 
 app.set('views', './src/views');
 app.set('view engine', 'ejs');
 app.use('/Books', bookRouter);
+app.use('/Admin',adminRouter);
 
 
 app.get('/Authors', function(req, res) {
